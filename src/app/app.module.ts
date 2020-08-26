@@ -8,15 +8,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // Importando los imports de material desde un module
 import { MaterialModule } from './material.module';
 import { MapaComponent } from './components/mapa/mapa.component';
-import { MapaEditarComponent } from './components/mapa/mapa-editar.component';
 
 // Importando el modulo de google maps
 import { AgmCoreModule } from '@agm/core';
+import { MapaEditarComponent } from './components/mapa/mapa-editar.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  entryComponents: [
-    MapaEditarComponent
-  ],
   declarations: [
     AppComponent,
     MapaComponent,
@@ -26,6 +24,7 @@ import { AgmCoreModule } from '@agm/core';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
     MaterialModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyDYkQ3p2zkbAmrWBqmRdcjQZekl1IaGTBQ'
